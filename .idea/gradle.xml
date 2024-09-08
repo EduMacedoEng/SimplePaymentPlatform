@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="GradleMigrationSettings" migrationVersion="1" />
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
@@ -19,6 +20,8 @@
               <build path="$PROJECT_DIR$/1-app/user" name="user">
                 <projects>
                   <project path="$PROJECT_DIR$/1-app/user" />
+                  <project path="$PROJECT_DIR$/1-app/user/api" />
+                  <project path="$PROJECT_DIR$/1-app/user/service" />
                 </projects>
               </build>
             </builds>
@@ -31,6 +34,8 @@
             <option value="$PROJECT_DIR$/0-common/extensions" />
             <option value="$PROJECT_DIR$/0-common/libs" />
             <option value="$PROJECT_DIR$/1-app/user" />
+            <option value="$PROJECT_DIR$/1-app/user/api" />
+            <option value="$PROJECT_DIR$/1-app/user/service" />
           </set>
         </option>
       </GradleProjectSettings>

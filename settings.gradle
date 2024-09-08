@@ -1,6 +1,8 @@
-rootProject.name = 'bank-project'
+rootProject.name = "bank-project"
 
-includeBuild('0-common/extensions')
-includeBuild('0-common/libs')
-includeBuild('1-app/user')
+// Incluindo builds do diretório comum
+includeBuild("0-common/extensions")
+includeBuild("0-common/libs")
 
+// Incluindo o serviço de user no projeto
+includeBuild("1-app/user")
