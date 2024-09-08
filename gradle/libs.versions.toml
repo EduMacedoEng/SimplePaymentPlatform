@@ -1,0 +1,93 @@
+[versions]
+apacheCommonsText = "1.11.0"
+awaitility = "4.2.1"
+axonframework = "4.10.0"
+dashjoin-jsonata = "0.9.7"
+datadog = "1.38.1"
+easyRandom = "5.0.0"
+easyRules = "4.1.0"
+google-cel = "0.6.0"
+google-guava = "33.1.0-jre"
+instancio = "5.0.1"
+ioNettyMacOS = "4.1.110.Final"
+jakarta-mail = "2.0.1"
+jgrapht = "1.5.2"
+jobrunr = "7.2.3"
+json-path = "2.9.0"
+jsonschemaGenerator = "4.36.0"
+jsonschemaValidator = "1.5.1"
+keycloak = "25.0.1"
+lombok = "1.18.32"
+mapstruct = "1.6.0"
+modelMapper = "3.1.1" # Remove. Use MapStruct
+mustache = "0.9.10"
+opencsv = "5.9"
+opentelemetry = "2.6.0"
+projectnessie-cel = "0.5.0"
+querydsl = "5.1.0"
+spring-retry = "2.0.6"
+springboot = "3.3.3"
+springcloud = "2023.0.3"
+springcloudgcp = "5.5.1"
+springDependencyManagement = "1.1.6"
+springdoc = "2.6.0"
+swagger-parser = "2.1.22"
+thymeleaf = "3.1.2.RELEASE"
+wiremock = "3.6.0"
+
+[libraries]
+apache-commons-text = { module = "org.apache.commons:commons-text", version.ref = "apacheCommonsText" }
+awaitility = { module = "org.awaitility:awaitility", version.ref = "awaitility" }
+axonframework-bom = { module = "org.axonframework:axon-bom", version.ref = "axonframework" }
+dashjoin-jsonata = { module = "com.dashjoin:jsonata", version.ref = "dashjoin-jsonata" }
+datadog-agent = { module = "com.datadoghq:dd-java-agent", version.ref = "datadog" }
+easyRandom = { module = "org.jeasy:easy-random-core", version.ref = "easyRandom" }
+easyRules-core = { module = "org.jeasy:easy-rules-core", version.ref = "easyRules" }
+easyRules-spel = { module = "org.jeasy:easy-rules-spel", version.ref = "easyRules" }
+easyRules-support = { module = "org.jeasy:easy-rules-support", version.ref = "easyRules" }
+google-beanMatchers = { module = "com.google.code.bean-matchers:bean-matchers", version = "0.14" }
+google-cel = { module = "dev.cel:cel", version.ref = "google-cel" }
+google-guava = { module = "com.google.guava:guava", version.ref = "google-guava" }
+instancio = { module = "org.instancio:instancio-junit", version.ref = "instancio" }
+io-netty-macos = { module = "io.netty:netty-resolver-dns-native-macos", version.ref = "ioNettyMacOS" }
+jakarta-mail = { module = "com.sun.mail:jakarta.mail", version.ref = "jakarta-mail" }
+jgrapht = { module = "org.jgrapht:jgrapht-core", version.ref = "jgrapht" }
+jobrunr = { module = "org.jobrunr:jobrunr-spring-boot-3-starter", version.ref = "jobrunr" }
+jsonPath = { module = "com.jayway.jsonpath:json-path", version.ref = "json-path" }
+victools-jsonschema-generator-core = { module = "com.github.victools:jsonschema-generator", version.ref = "jsonschemaGenerator" }
+victools-jsonschema-generator-module-jackson = { module = "com.github.victools:jsonschema-module-jackson", version.ref = "jsonschemaGenerator" }
+victools-jsonschema-generator-module-jakarta = { module = "com.github.victools:jsonschema-module-jakarta-validation", version.ref = "jsonschemaGenerator" }
+victools-jsonschema-generator-module-swagger2 = { module = "com.github.victools:jsonschema-module-swagger-2", version.ref = "jsonschemaGenerator" }
+networknt-jsonschema-validator = { module = "com.networknt:json-schema-validator", version.ref = "jsonschemaValidator" }
+keycloak-admin-client = { module = "org.keycloak:keycloak-admin-client", version.ref = "keycloak" }
+lombok = { module = "org.projectlombok:lombok", version.ref = "lombok" }
+mapstruct-core = { module = "org.mapstruct:mapstruct", version.ref = "mapstruct" }
+mapstruct-lombok-binding = { module = "org.projectlombok:lombok-mapstruct-binding", version = "0.2.0" }
+mapstruct-processor = { module = "org.mapstruct:mapstruct-processor", version.ref = "mapstruct" }
+modelMapper = { module = "org.modelmapper:modelmapper", version.ref = "modelMapper" }
+mustache = { module = "com.github.spullara.mustache.java:compiler", version.ref = "mustache" }
+obfuscation-core = { module = "com.github.robtimus:obfuscation-core", version = "1.5" }
+opencsv = { module = "com.opencsv:opencsv", version.ref = "opencsv" }
+opentelemetry-bom = { module = "io.opentelemetry.instrumentation:opentelemetry-instrumentation-bom", version.ref = "opentelemetry" }
+projectnessie-cel-bom = { module = "org.projectnessie.cel:cel-bom", version.ref = "projectnessie-cel" }
+querydsl-apt = { module = "com.querydsl:querydsl-apt", version.ref = "querydsl" }
+querydsl-mongodb = { module = "com.querydsl:querydsl-mongodb", version.ref = "querydsl" }
+spring-retry = { module = "org.springframework.retry:spring-retry", version.ref = "spring-retry" }
+springboot-bom = { module = "org.springframework.boot:spring-boot-dependencies", version.ref = "springboot" }
+springcloud-bom = { module = "org.springframework.cloud:spring-cloud-dependencies", version.ref = "springcloud" }
+springcloudgcp-bom = { module = "com.google.cloud:spring-cloud-gcp-dependencies", version.ref = "springcloudgcp" }
+springdoc-openapi-common = { module = "org.springdoc:springdoc-openapi-starter-common", version.ref = "springdoc" }
+springdoc-openapi-webflux-ui = { module = "org.springdoc:springdoc-openapi-starter-webflux-ui", version.ref = "springdoc" }
+springdoc-openapi-webmvc-api = { module = "org.springdoc:springdoc-openapi-starter-webmvc-api", version.ref = "springdoc" }
+springdoc-openapi-webmvc-ui = { module = "org.springdoc:springdoc-openapi-starter-webmvc-ui", version.ref = "springdoc" }
+swagger-parser = { module = "io.swagger.parser.v3:swagger-parser-v3", version.ref = "swagger-parser" }
+thymeleaf = { module = "org.thymeleaf:thymeleaf", version.ref = "thymeleaf" }
+wiremock = { module = "org.wiremock:wiremock-standalone", version.ref = "wiremock" }
+
+[plugins]
+git-info = { id = "com.gorylenko.gradle-git-properties", version = "2.4.2" }
+jib = { id = "com.google.cloud.tools.jib", version = "3.4.3" }
+jib-javaagent = { id = "com.ryandens.javaagent-jib", version = "0.5.2" }
+sonarqube = { id = "org.sonarqube", version = "4.4.1.3373" }
+springboot = { id = "org.springframework.boot", version.ref = "springboot" }
+springDependencyManagement = { id = "io.spring.dependency-management", version.ref = "springDependencyManagement" }

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <compositeConfiguration>
+          <compositeBuild compositeDefinitionSource="SCRIPT">
+            <builds>
+              <build path="$PROJECT_DIR$/0-common/extensions" name="extensions">
+                <projects>
+                  <project path="$PROJECT_DIR$/0-common/extensions" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/0-common/libs" name="libs">
+                <projects>
+                  <project path="$PROJECT_DIR$/0-common/libs" />
+                </projects>
+              </build>
+              <build path="$PROJECT_DIR$/1-app/user" name="user">
+                <projects>
+                  <project path="$PROJECT_DIR$/1-app/user" />
+                </projects>
+              </build>
+            </builds>
+          </compositeBuild>
+        </compositeConfiguration>
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/0-common/extensions" />
+            <option value="$PROJECT_DIR$/0-common/libs" />
+            <option value="$PROJECT_DIR$/1-app/user" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

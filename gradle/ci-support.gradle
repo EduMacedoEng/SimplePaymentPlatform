@@ -1,0 +1,14 @@
+import groovy.json.JsonOutput
+
+// Emit a JSON-formatted list of test tasks to be run in CI
+task projectsPath {
+  project.afterEvaluate {
+    def tasks = gradle.includedBuilds.name.collect {
+      ':' + it
+    }
+
+    doLast {
+      println(JsonOutput.toJson(tasks))
+    }
+  }
+}

@@ -1,0 +1,6 @@
+rootProject.name = 'bank-project'
+
+includeBuild('0-common/extensions')
+includeBuild('0-common/libs')
+includeBuild('1-app/user')
+

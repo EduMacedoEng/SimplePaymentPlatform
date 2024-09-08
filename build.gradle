@@ -1,0 +1,26 @@
+plugins {
+  id 'java'
+  alias(libs.plugins.jib)
+}
+
+apply from: "$rootDir/gradle/ci-support.gradle"
+
+tasks.named('build') {
+  dependsOn gradle.includedBuilds*.task(':build')
+}
+
+tasks.named('clean') {
+  dependsOn gradle.includedBuilds*.task(':clean')
+}
+
+tasks.named('check') {
+  dependsOn gradle.includedBuilds*.task(':check')
+}
+
+tasks.named('test') {
+  dependsOn gradle.includedBuilds*.task(':test')
+}
+
+tasks.register('sonar') {
+  dependsOn gradle.includedBuilds*.task(':sonar')
+}
